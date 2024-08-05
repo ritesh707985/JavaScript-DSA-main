@@ -1,0 +1,31 @@
+var arr = ['a','b', 'c', 'd', 'a', 'b', 'c', 'e','a', 'c', 'e']
+const count = {}
+arr.forEach(ele =>{
+    count[ele]= (count[ele] || 0 ) + 1 
+})
+
+console.log(count);
+
+var arr = ['a','b', 'c', 'd', 'a', 'b', 'c', 'e','a', 'c', 'e']
+
+const count ={}
+
+for(let ele of arr){
+    count[ele] = (count[ele] || 0 ) + 1
+
+}
+console.log(count)
+
+
+const str ="hare krishna hare krishna krishna krishna hare hare"
+
+let obj = {}
+for(let x of str){
+    if(obj[x]){
+        obj[x] = obj[x]+1
+    }else{
+        obj[x] = 1
+    }
+}
+
+console.log(obj)
